@@ -8,12 +8,12 @@ namespace SdaClass2
 {
     public class Task3
     {
-        public  void CopyFile(string fileToCopyPath, string targetFolderPath)
+        public  void CopyFile(string file, string directory)
         {
-            if (!File.Exists(fileToCopyPath))
+            if (!File.Exists(file))
                 throw new FileNotFoundException("Can't find file to copy");
 
-            if (!Directory.Exists(targetFolderPath))
+            if (!Directory.Exists(directory))
                 throw new DirectoryNotFoundException("Can't find target folder!");
 
         }

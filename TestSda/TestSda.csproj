@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SdaClass2\SdaClass2.csproj" />
+    <ProjectReference Include="..\SDAclass3\SDAclass3.csproj" />
   </ItemGroup>
 
 </Project>

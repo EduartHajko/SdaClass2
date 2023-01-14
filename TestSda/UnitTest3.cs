@@ -31,7 +31,14 @@ namespace TestSda
         [Test]
         public void TestFileNonExists()
         {
-            Assert.DoesNotThrow(() => { test.CopyFile("edi.exe", null); });
+            string file = @"C:\Windows\regedit.exe";
+            string directory = @"C:\Windows";
+
+             TestContext.WriteLine("kemi aksesuar metoden me sukses TestFileNonExists");
+
+            TestContext.WriteLine("parametrat jane file "+file+ "dhe directory "+ directory);
+
+            Assert.DoesNotThrow(() => { test.CopyFile(file, directory); });
            
         }
 
@@ -42,9 +49,9 @@ namespace TestSda
             Assert.DoesNotThrow(() => { test.CopyFile("edi.exe", null); });
         }
         [Test]
-        public void TestNotCompiled2()
+        public void SecondProjectTest()
         {
-            Assert.Inconclusive();
+           
         }
 
 
