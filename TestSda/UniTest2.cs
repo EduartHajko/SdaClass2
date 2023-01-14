@@ -12,7 +12,7 @@ namespace TestSda
     {
         //jemi tek A(AKSES) e pare 
         private Task2 test { get; set; } = null;
-
+        public TestContext TestContext { get; set; }
         [SetUp]
         public void Setup()
         {
@@ -29,7 +29,7 @@ namespace TestSda
         [Test]
         public void testFibonaciNonException()
         {
-
+            TestContext.WriteLine();
             Assert.DoesNotThrow(() => { test.Fibonacci(40); });
         }
         [Test]
