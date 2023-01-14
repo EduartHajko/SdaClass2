@@ -8,7 +8,7 @@ namespace SdaClass2
 {
     public class Task2
     {
-        public static int Fibonacci(int index)
+        public int Fibonacci(int index)
         {
             if (index == 0)
                 return 0;
