@@ -15,6 +15,9 @@ namespace SdaClass2
                 nota = "A";
             else if (grades <= 90 && grades > 80)
                 nota="B";
+
+
+
             else if (grades <= 80 && grades > 70)
                 nota = "C";
             else if (grades <= 70 && grades > 60)
