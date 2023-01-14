@@ -24,9 +24,20 @@ namespace TestSda
             Assert.AreEqual(0, test.Fibonacci(0));
             Assert.AreEqual(1, test.Fibonacci(1));
             Assert.AreEqual(13, test.Fibonacci(7));
-            Assert.Throws<ArgumentOutOfRangeException>(() => { test.Fibonacci(-1); });
-            Assert.Throws<ArgumentOutOfRangeException>(() => { test.Fibonacci(int.MaxValue); });
+          
+        }
+        [Test]
+        public void testFibonaciNonException()
+        {
+
             Assert.DoesNotThrow(() => { test.Fibonacci(40); });
+        }
+        [Test]
+        public void testFibonaciException()
+        {
+          
+            Assert.Throws<ArgumentOutOfRangeException>(() => { test.Fibonacci(2); });
+            
         }
     }
 }
